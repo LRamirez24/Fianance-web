@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import "./variables";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    // off-white v1 background-color: #FAF9F6;
+    // v2 background-color: #f8f8ff;
+    background-color: #FCFCFC;
+    color: #140031;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
+}
+h2{
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+textarea {
+    font-size: 3.2rem;
+    padding-left: 1rem;
+}
+
+
+
+
+/* base style for navbar & title */
+.main-head {
+    width: 100%;
+    margin: 0 0 0 auto;
+    nav {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        min-height: 10vh;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: #3757DA;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex: 1;
+    }
+    .logo h1 {
+        margin: 4rem;
+        font-size: 3.2rem;
+        color: #FCFCFC;
+        font-weight: 700;
+    }
+}
+
+
+/*Business Info Section  */
+
+.main-info{
+    // margin: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8rem;
+    
+    .info-titles{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-direction: row;
+        // flex-wrap: wrap;
+        // margin-left: 4rem;
+        // margin-right: 4rem;
+      
+    }
+    h2{
+        margin-right: 8rem;
+    }
+    h2:last-of-type{
+        margin-right: 6rem;
+    }
+  
+}
+
+
+
+
+
+.title1{
+    border-bottom: 4px solid #3757DA;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    // margin-right: 2rem;
+}
+.title2{
+    border-bottom: 4px solid #C4C4C4;
+    padding-bottom: 1rem;
+    color: #0000003b;
+}
+.title3{
+    border-bottom: 4px solid #C4C4C4;
+    padding-bottom: 1rem;
+    color: #0000003b;
+}
+.title4{
+    border-bottom: 4px solid #C4C4C4;
+    padding-bottom: 1rem;
+    color: #0000003b;
+    // margin-right: 2rem;
+}
+
+
+/*Form Section  */
+
+.form-section {
+    min-height: 50vh;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: row;
+    // margin-top: 2rem;
+ padding-bottom: 4rem;
+}
+
+form {
+    // padding: 3rem 10rem;
+    padding-left: 8rem;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // border-radius: 2rem;
+    input,
+    textarea {
+        // margin: 2rem;
+        border-radius: 24px;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        &:focus {
+            outline: 2px solid black;
+        }
+    }
+    label {
+        font-size: 2rem;
+    }
+    input{
+        width: 700px;
+        height: 50px;
+        padding: 2rem;
+    }
+}
+
+.form-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 2rem;
+    background-color:#3757DA;
+    border-radius: 24px;
+    border-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    &:focus {
+        background: #1f3aa7;
+    }
+    &:hover {
+        background: #1f3aa7;
+        cursor: pointer;
+    }
+}
+
+.email-icon{
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+}
+
+// .icon1{
+//     max-width: 2.4rem;
+//     max-height: 2.4rem;
+//     position: absolute;
+//     position: absolute;
+//     left: 20px;
+//     top: 55px;
+   
+    
+// }
+// .with-sidebar .page-content {
+// flex: 0 0 calc(60% - 2rem);
+// }
+// .with-sidebar .sidebar {
+// flex: 0 0 calc(40% - 2rem);
+// }
+
+
+
+
+
+/*Sidebar Section  */
+.sidebar{
+    margin-right: 4rem;
+    margin-top: 10rem;
+}
+
+.text-sidebar{
+    font-weight: bold;
+}
+.text2-sidebar{
+    margin-top: 4rem;
+    line-height: 1.6;
+}
