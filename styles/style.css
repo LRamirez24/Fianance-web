@@ -168,11 +168,11 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-left: 8rem;
   padding-bottom: 4rem;
 }
 
 form {
-  padding-left: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +262,7 @@ form input {
 
 /*Sidebar Section  */
 .sidebar {
-  margin-right: 4rem;
+  margin-right: 0rem;
   margin-top: 10rem;
 }
 
@@ -273,5 +273,62 @@ form input {
 .text2-sidebar {
   margin-top: 4rem;
   line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .main-info {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  .form-section {
+    padding-left: 2rem;
+    margin-top: 4rem;
+  }
+  input {
+    max-width: 600px;
+  }
+  .title2 {
+    display: none;
+  }
+  .title3 {
+    display: none;
+  }
+  .title4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  input {
+    max-width: 400rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-info {
+    margin-left: 1rem;
+  }
+  .sidebar {
+    display: none;
+  }
+  .form-section {
+    max-width: 40rem;
+    padding-left: 1rem;
+  }
+  .form-btn {
+    margin-left: 0rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  form input {
+    max-width: 300px;
+  }
+  .details2 {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
