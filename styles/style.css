@@ -208,6 +208,7 @@ form input {
   height: 50px;
   padding: 2rem;
   border-color: black;
+  text-align: center;
 }
 
 .form-btn {
@@ -258,6 +259,25 @@ form input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.icon1 {
+  max-width: 2rem;
+  max-height: 2rem;
+  position: absolute;
+  position: absolute;
+  left: 20px;
+  top: 59px;
+}
+
+.icon2 {
+  max-width: 2rem;
+  max-height: 2rem;
+  position: absolute;
+  position: absolute;
+  left: 20px;
+  top: 59px;
 }
 
 /*Sidebar Section  */
@@ -273,6 +293,57 @@ form input {
 .text2-sidebar {
   margin-top: 4rem;
   line-height: 1.6;
+}
+
+.social-container {
+  padding: 0% 5%;
+}
+
+.social-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  margin-right: 12rem;
+}
+
+.social-icons1 {
+  margin-right: 3rem;
+  width: 2em;
+  height: 2rem;
+}
+
+.social-icons1,
+.social-icons2 {
+  margin-bottom: 8rem;
+}
+
+.social-icons2 {
+  width: 2em;
+  height: 2rem;
+}
+
+.social-icons1:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.social-icons2:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+@media only screen and (max-width: 1200px) {
+  .social-container {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -297,6 +368,9 @@ form input {
     display: none;
   }
   .title4 {
+    display: none;
+  }
+  .social-container {
     display: none;
   }
 }
