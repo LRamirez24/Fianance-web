@@ -47,11 +47,6 @@ p {
   line-height: 1;
 }
 
-textarea {
-  font-size: 3.2rem;
-  padding-left: 1rem;
-}
-
 /* base style for navbar & title */
 .main-head {
   width: 100%;
@@ -191,7 +186,7 @@ form textarea {
   margin-bottom: 4rem;
   margin-top: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 form input:focus,
