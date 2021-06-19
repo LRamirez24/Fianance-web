@@ -18,13 +18,13 @@ body {
   color: #140031;
 }
 
+/*Base Styles  */
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 img {
@@ -129,6 +129,7 @@ p {
   margin-right: 6rem;
 }
 
+/*Titles for form Section  */
 .title1 {
   border-bottom: 4px solid #3757DA;
   padding-bottom: 1rem;
@@ -227,6 +228,7 @@ form input {
   cursor: pointer;
 }
 
+/*Form text under with checkbox Section  */
 .details {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -246,6 +248,7 @@ form input {
   height: 3rem;
 }
 
+/*Form Icons  */
 .email-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,6 +282,7 @@ form input {
 .sidebar {
   margin-right: 0rem;
   margin-top: 10rem;
+  position: relative;
 }
 
 .text-sidebar {
@@ -290,29 +294,27 @@ form input {
   line-height: 1.6;
 }
 
+/*Sidebar social icons Section  */
 .social-container {
   padding: 0% 5%;
 }
 
 .social-container ul {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 2rem;
-  margin-right: 12rem;
+  margin-top: 4rem;
 }
 
 .social-icons1 {
   margin-right: 3rem;
-  width: 2em;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .social-icons1,
@@ -321,8 +323,8 @@ form input {
 }
 
 .social-icons2 {
-  width: 2em;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .social-icons1:hover {
@@ -335,12 +337,7 @@ form input {
           transform: scale(0.9, 0.9);
 }
 
-@media only screen and (max-width: 1200px) {
-  .social-container {
-    display: none;
-  }
-}
-
+/*Mobile versions Section  */
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
